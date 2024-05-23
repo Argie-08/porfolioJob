@@ -1,0 +1,57 @@
+.contactForm {
+  height: 80vh;
+  width: 100%;
+  background: url(https://static.vecteezy.com/system/resources/previews/007/100/608/non_2x/abstract-geometric-white-and-gray-on-light-silver-gradient-background-modern-banner-design-illustration-free-vector.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.contactForm p {
+  font-size: clamp(0.8rem, 0.6714rem + 0.5714vw, 1.1rem);
+  text-align: center;
+}
+form {
+  background: rgb(255, 255, 255);
+  height: 100%;
+  padding: 1rem;
+  width: 800px;
+  border-radius: 0.5rem;
+  box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.inputForm {
+  padding-left: 2rem;
+  width: 100%;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-size: clamp(0.8rem, 0.7143rem + 0.381vw, 1rem);
+}
+.inputForm:hover {
+  border-color: rgba(0, 0, 0, 0.5);
+}
+.inputIcon {
+  font-size: 1.2rem;
+}
+.formContainer {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+@media (max-width: 575px) {
+  .contactForm {
+    height: 100%;
+  }
+}
+@media (min-width: 576px) {
+}
+@media (min-width: 768px) {
+}
+@media (min-width: 961px) {
+}
+
+@media (min-width: 1200px) {
+}

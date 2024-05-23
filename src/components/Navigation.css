@@ -1,0 +1,116 @@
+.menubar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fffae6;
+  /* background: transparent; */
+}
+.navTop {
+  position: sticky;
+  top: 0;
+
+  z-index: 5;
+}
+.p-menubar-root-list {
+  margin: 0;
+  gap: 0.5rem;
+  background: #fffae6;
+}
+.p-menuitem-content a {
+  text-decoration: none;
+  font-weight: 800;
+}
+.p-menuitem-content span {
+  transition: 0.3s;
+}
+
+.nameIcon p {
+  font-weight: 800;
+}
+
+.mr-2 {
+  background: #ff5f00;
+  border-radius: 50%;
+}
+.nameIcon {
+  cursor: pointer;
+  transition: 0.5s;
+}
+.nameIcon:hover {
+  color: #ff5f00;
+}
+.p-menuitem-content:hover span {
+  color: #ff5f00;
+}
+.p-icon {
+  color: black;
+}
+
+@media (max-width: 575px) {
+  .menubar {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+  .p-menuitem-content span {
+    font-size: 0.7rem;
+  }
+  .p-menubar-root-list {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+  .nameIcon p {
+    font-size: 0.8rem;
+  }
+}
+@media (min-width: 576px) {
+  .menubar {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .p-menuitem-content span {
+    font-size: 0.8rem;
+  }
+  .p-menubar-root-list {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+  .nameIcon p {
+    font-size: 0.9rem;
+  }
+}
+@media (min-width: 768px) {
+}
+@media (min-width: 961px) {
+  .p-menubar-root-list {
+    gap: 2rem;
+  }
+  .menubar {
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+  .p-menuitem-content span {
+    font-size: 1.1rem;
+  }
+  .nameIcon p {
+    font-size: 1.1rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .p-menubar-root-list {
+    gap: 4rem;
+  }
+  .menubar {
+    padding-left: 8rem;
+    padding-right: 8rem;
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+  }
+}

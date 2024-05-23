@@ -1,0 +1,146 @@
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+import { Button } from "primereact/button";
+import Recipe from "../assets/recipe.png";
+import Horizone from "../assets/horizone.png";
+import "./Projects.css";
+
+const Projects = ({ project }) => {
+  function pureJs() {
+    window.location.href =
+      "https://argie-08.github.io/TakeUpCooking/indexambot.html";
+  }
+  function fullStack() {
+    window.location.href = "https://capstone-blsl.onrender.com";
+  }
+  return (
+    <section ref={project} className="pt-5">
+      <Container className="d-flex flex-column ">
+        <Row className="mt-3">
+          <Col className="d-flex flex-column align-items-center">
+            <h2 className="project">PROJECTS</h2>
+            <p className="projectIntroTxt">
+              Here you will find some of the personal and bootcamp projects that
+              I created with each project containing its live link and codes.
+            </p>
+          </Col>
+        </Row>
+        <Row className="d-flex gap-5 align-items-center projectSection">
+          <Col xs={12} md={6} xl={6}>
+            <img src={Recipe} className="recipeImg" />
+          </Col>
+          <Col xs={12} md={5} xl={5}>
+            <div>
+              <h4>Take-Up Cooking</h4>
+              <p>
+                Take-Up is a successful and awarded as best project focused up
+                to Javascript. Fetching APIs that populate the website for the
+                individual that eager on recipe build.
+              </p>
+            </div>
+            <div className="mt-3">
+              <h4>Tools Used(pure)</h4>
+              <Button
+                label="HTML"
+                disabled
+                severity="secondary"
+                raised
+                className="skillsBtn px-4 py-1"
+              />
+              <Button
+                label="CSS"
+                disabled
+                severity="secondary"
+                raised
+                className="skillsBtn px-4 py-1"
+              />
+              <Button
+                label="Javascript"
+                disabled
+                severity="secondary"
+                raised
+                className="skillsBtn px-4 py-1"
+              />
+            </div>
+            <div className="mt-3">
+              <h4>See Live</h4>
+              <Button
+                label="Live Link"
+                className="py-2 contactBtn"
+                onClick={pureJs}
+              ></Button>
+            </div>
+          </Col>
+        </Row>
+        <Row className="d-flex gap-5 align-items-center ">
+          <Col md={6} xl={6}>
+            <img src={Horizone} className="recipeImg" />
+          </Col>
+          <Col md={5} xl={5}>
+            <div>
+              <h4>Horizone ECommerce</h4>
+              <div>
+                <p>
+                  An online store displaying our digital world through
+                  full-stack web development. Project ready for the global
+                  entrepreneur on both the front and back ends.
+                </p>
+                <p>Awarded as best capstone project on the bootcamp.</p>
+              </div>
+            </div>
+            <div className="mt-3">
+              <h4>Tools Used</h4>
+              <Button
+                label="HTML"
+                disabled
+                severity="secondary"
+                raised
+                className="skillsBtn px-4 py-1"
+              />
+              <Button
+                label="CSS"
+                disabled
+                severity="secondary"
+                raised
+                className="skillsBtn px-4 py-1"
+              />
+              <Button
+                label="Javascript"
+                disabled
+                severity="secondary"
+                raised
+                className="skillsBtn px-4 py-1"
+              />
+              <Button
+                label="React"
+                disabled
+                severity="secondary"
+                raised
+                className="skillsBtn px-4 py-1"
+              />
+              <Button
+                label="PHP"
+                disabled
+                severity="secondary"
+                raised
+                className="skillsBtn px-4 py-1"
+              />
+              <p>and all my skills declared above.</p>
+            </div>
+            <div className="mt-3">
+              <h4>See Live</h4>
+              <Button
+                label="Live Link"
+                className="py-2 contactBtn"
+                onClick={fullStack}
+              ></Button>
+            </div>
+          </Col>
+        </Row>
+      </Container>
+    </section>
+  );
+};
+
+export default Projects;
