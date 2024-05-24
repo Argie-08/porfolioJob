@@ -14,6 +14,12 @@ const Projects = ({ project }) => {
   function fullStack() {
     window.location.href = "https://capstone-blsl.onrender.com";
   }
+  function pureJsGit() {
+    window.location.href = "https://github.com/Argie-08/TakeUpCooking.git";
+  }
+  function fullStackGit() {
+    window.location.href = "https://github.com/Argie-08/capstone.git";
+  }
   return (
     <section ref={project} className="pt-5">
       <Container className="d-flex flex-column ">
@@ -65,11 +71,19 @@ const Projects = ({ project }) => {
             </div>
             <div className="mt-3">
               <h4>See Live</h4>
-              <Button
-                label="Live Link"
-                className="py-2 contactBtn"
-                onClick={pureJs}
-              ></Button>
+              <div className="d-flex gap-4">
+                <Button
+                  label="Live Link"
+                  className="py-2 contactBtn"
+                  onClick={pureJs}
+                />
+                <Button
+                  label="Github Code Link"
+                  className="py-2"
+                  onClick={pureJsGit}
+                  link
+                />
+              </div>
             </div>
           </Col>
         </Row>
@@ -130,11 +144,19 @@ const Projects = ({ project }) => {
             </div>
             <div className="mt-3">
               <h4>See Live</h4>
-              <Button
-                label="Live Link"
-                className="py-2 contactBtn"
-                onClick={fullStack}
-              ></Button>
+              <div className="d-flex gap-4">
+                <Button
+                  label="Live Link"
+                  className="py-2 contactBtn"
+                  onClick={fullStack}
+                />
+                <Button
+                  label="Github Code Link"
+                  className="py-2"
+                  onClick={fullStackGit}
+                  link
+                />
+              </div>
             </div>
           </Col>
         </Row>

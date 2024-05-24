@@ -45,6 +45,9 @@
 .p-icon {
   color: black;
 }
+.p-menuitem-link:hover {
+  background: #fffae6;
+}
 
 @media (max-width: 575px) {
   .menubar {
@@ -54,7 +57,8 @@
     padding-bottom: 0.5rem;
   }
   .p-menuitem-content span {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
+    border-bottom: solid 1px black;
   }
   .p-menubar-root-list {
     padding-top: 0.5rem;
@@ -62,6 +66,9 @@
   }
   .nameIcon p {
     font-size: 0.8rem;
+  }
+  .p-menuitem-link {
+    margin-top: 0.8rem;
   }
 }
 @media (min-width: 576px) {
@@ -74,6 +81,7 @@
 
   .p-menuitem-content span {
     font-size: 0.8rem;
+    border-bottom: solid 1px black;
   }
   .p-menubar-root-list {
     padding-top: 0.5rem;
@@ -82,8 +90,14 @@
   .nameIcon p {
     font-size: 0.9rem;
   }
+  .p-menuitem-link {
+    margin-top: 0.8rem;
+  }
 }
 @media (min-width: 768px) {
+  .p-menuitem-link {
+    margin-top: 1rem;
+  }
 }
 @media (min-width: 961px) {
   .p-menubar-root-list {
@@ -97,9 +111,13 @@
   }
   .p-menuitem-content span {
     font-size: 1.1rem;
+    border-bottom: none;
   }
   .nameIcon p {
     font-size: 1.1rem;
+  }
+  .p-menuitem-link {
+    margin-top: 0;
   }
 }
 
