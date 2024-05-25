@@ -14,6 +14,7 @@ const App = () => {
   const about = useRef();
   const project = useRef();
   const contact = useRef();
+  const [statement, setStatement] = useState("");
 
   function handleHome() {
     home.current?.scrollIntoView.offsetTop({ behavior: "smooth" });
@@ -42,11 +43,11 @@ const App = () => {
         contact={handleContact}
         home={handleHome}
       />
-      <Hero home={home} projects={handleProjects} />
+      <Hero home={home} projects={handleProjects} setStatement={setStatement} />
       <About about={about} contact={handleContacts} />
       <Projects project={project} />
       <Contact contact={contact} />
-      <Footer />
+      <Footer statement={statement} />
     </>
   );
 };

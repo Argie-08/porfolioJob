@@ -1,7 +1,14 @@
+import { useEffect } from "react";
 import { Button } from "primereact/button";
 import "./Hero.css";
 
-const Hero = ({ home, projects }) => {
+const Hero = ({ home, projects, setStatement }) => {
+  useEffect(() => {
+    const first = document.getElementById("heroStatement");
+    setStatement(first.innerText);
+    return () => {};
+  }, []);
+
   function linkedIn() {
     window.location.href = "https://www.linkedin.com";
   }
@@ -20,7 +27,7 @@ const Hero = ({ home, projects }) => {
       <div className="text-center d-flex flex-column gap-5 align-items-center heroH2">
         <h2 ref={home}>HEY, I'M ARGIE CANONAYON</h2>
         <div>
-          <p>
+          <p id="heroStatement">
             A Result-Oriented Full Stack Web Developer building and managing
             Websites and Web Applications that leads to the success of the
             overall products.

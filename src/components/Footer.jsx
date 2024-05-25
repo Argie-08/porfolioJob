@@ -3,7 +3,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import "./Footer.css";
 
-const Footer = () => {
+const Footer = (statement) => {
   function linkedIn() {
     window.location.href = "https://www.linkedin.com";
   }
@@ -22,11 +22,7 @@ const Footer = () => {
         <Row className="footerRow footerLine">
           <Col md={8} className="">
             <h4>ARGIE CANONAYON</h4>
-            <p>
-              A Frontend focused Web Developer building the Frontend of Websites
-              and Web Applications that leads to the success of the overall
-              product
-            </p>
+            <p>{statement.statement}</p>
           </Col>
           <Col md={3} className="">
             <h4>SOCIAL MEDIA</h4>
