@@ -5,16 +5,17 @@ import "./Footer.css";
 
 const Footer = (statement) => {
   function linkedIn() {
-    window.location.href = "https://www.linkedin.com";
+    window.location.href =
+      "https://www.linkedin.com/in/argie-canonayon-92305a216";
   }
   function gitHub() {
-    window.location.href = "https://www.github.com";
+    window.location.href = "https://github.com/Argie-08";
   }
   function discord() {
-    window.location.href = "https://www.discord.com";
+    window.location.href = "https://discord.com/channels/argie_32989";
   }
   function facebook() {
-    window.location.href = "https://www.facebook.com";
+    window.location.href = "https://web.facebook.com/argie.canonayon08";
   }
   return (
     <footer>
