@@ -1,14 +1,16 @@
 .contactForm {
-  height: 80vh;
+  height: 100%;
   width: 100%;
   background: url(https://static.vecteezy.com/system/resources/previews/007/100/608/non_2x/abstract-geometric-white-and-gray-on-light-silver-gradient-background-modern-banner-design-illustration-free-vector.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  padding-bottom: 2rem;
 }
 .contactForm p {
   font-size: clamp(0.8rem, 0.6714rem + 0.5714vw, 1.1rem);
   text-align: center;
+  margin-bottom: 2rem;
 }
 form {
   background: rgb(255, 255, 255);

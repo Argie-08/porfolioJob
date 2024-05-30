@@ -6,7 +6,7 @@ import "./About.css";
 
 const About = ({ about, contact }) => {
   return (
-    <main className="d-flex align-items-center pt-5" ref={about}>
+    <main className="d-flex align-items-center pt-5 aboutSection" ref={about}>
       <Container className="d-flex flex-column justify-content-around">
         <Row>
           <Col className="d-flex flex-column align-items-center textCenter aboutMarginBtm">
