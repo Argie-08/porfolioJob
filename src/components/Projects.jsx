@@ -8,17 +8,20 @@ import "./Projects.css";
 
 const Projects = ({ project }) => {
   function pureJs() {
-    window.location.href =
-      "https://argie-08.github.io/TakeUpCooking/indexambot.html";
+    window.location.href = "https://eulakitchen.onrender.com";
   }
   function fullStack() {
     window.location.href = "https://capstone-blsl.onrender.com";
   }
   function pureJsGit() {
-    window.location.href = "https://github.com/Argie-08/TakeUpCooking.git";
+    window.location.href =
+      "https://github.com/Argie-08/kodego-mini-project-2.git";
   }
-  function fullStackGit() {
+  function frontGit() {
     window.location.href = "https://github.com/Argie-08/capstone.git";
+  }
+  function backGit() {
+    window.location.href = "https://github.com/Argie-08/capstone-backend.git";
   }
   return (
     <section ref={project} className="pt-5">
@@ -38,15 +41,15 @@ const Projects = ({ project }) => {
           </Col>
           <Col xs={12} md={5} xl={5}>
             <div>
-              <h4>Take-Up Cooking</h4>
+              <h4>Eula's Kitchen</h4>
               <p>
                 Take-Up is a successful and awarded as best project focused up
-                to Javascript. Fetching APIs that populate the website for the
+                to ReactJs. Fetching APIs that populate the website for the
                 individual that eager on recipe build.
               </p>
             </div>
             <div className="mt-3">
-              <h4>Tools Used(pure)</h4>
+              <h4>Tools Used</h4>
               <Button
                 label="HTML"
                 disabled
@@ -62,7 +65,7 @@ const Projects = ({ project }) => {
                 className="skillsBtn px-4 py-1"
               />
               <Button
-                label="Javascript"
+                label="ReactJs"
                 disabled
                 severity="secondary"
                 raised
@@ -151,9 +154,15 @@ const Projects = ({ project }) => {
                   onClick={fullStack}
                 />
                 <Button
-                  label="Github Code Link"
-                  className="py-2"
-                  onClick={fullStackGit}
+                  label="Github Front-End"
+                  className="py-2 gitcode"
+                  onClick={frontGit}
+                  link
+                />
+                <Button
+                  label="Github Back-End"
+                  className="py-2 gitcode"
+                  onClick={backGit}
                   link
                 />
               </div>
