@@ -1,9 +1,15 @@
+<<<<<<< HEAD
 main {
+=======
+.aboutSection {
+  height: 100%;
+>>>>>>> 70ebd9797deef6feb0223fa6e26ef0be77d9ce1d
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
   width: 100%;
   background: rgba(223, 223, 223, 0.5);
 }
+
 .skillsBtn {
   border-radius: 0.2rem;
   margin: 0.3rem;
@@ -23,9 +29,7 @@ main h3 {
   font-size: clamp(1.4rem, 1.1429rem + 1.1429vw, 2rem);
   font-weight: 700;
 }
-.container {
-  height: 100%;
-}
+
 .about {
   position: relative;
   margin-bottom: 2rem;
