@@ -3,8 +3,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import { Button } from "primereact/button";
 import Recipe from "../assets/recipe.png";
-import Horizone from "../assets/horizone.png";
-import RiderShield from "../assets/pic.png";
+import RiderShield from "../assets/ridershield.png";
 import "./Projects.css";
 
 const Projects = ({ project }) => {
