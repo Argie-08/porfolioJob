@@ -4,6 +4,7 @@ import Col from "react-bootstrap/Col";
 import { Button } from "primereact/button";
 import Recipe from "../assets/recipe.png";
 import Horizone from "../assets/horizone.png";
+import RiderShield from "../assets/pic.png";
 import "./Projects.css";
 
 const Projects = ({ project }) => {
@@ -11,17 +12,18 @@ const Projects = ({ project }) => {
     window.location.href = "https://eulakitchen.onrender.com";
   }
   function fullStack() {
-    window.location.href = "https://capstone-blsl.onrender.com";
+    window.location.href = "https://ridershield-frontend.onrender.com";
   }
   function pureJsGit() {
     window.location.href =
       "https://github.com/Argie-08/kodego-mini-project-2.git";
   }
   function frontGit() {
-    window.location.href = "https://github.com/Argie-08/capstone.git";
+    window.location.href = "https://github.com/Argie-08/ridershield.git";
   }
   function backGit() {
-    window.location.href = "https://github.com/Argie-08/capstone-backend.git";
+    window.location.href =
+      "https://github.com/Argie-08/ridershield_backend.git";
   }
   return (
     <section ref={project} className="pt-5">
@@ -92,18 +94,17 @@ const Projects = ({ project }) => {
         </Row>
         <Row className="d-flex gap-5 align-items-center ">
           <Col md={6} xl={6}>
-            <img src={Horizone} className="recipeImg" />
+            <img src={RiderShield} className="recipeImg" />
           </Col>
           <Col md={5} xl={5}>
             <div>
-              <h4>Horizone ECommerce</h4>
+              <h4>Rider Shield</h4>
               <div>
                 <p>
                   An online store displaying our digital world through
                   full-stack web development. Project ready for the global
                   entrepreneur on both the front and back ends.
                 </p>
-                <p>Awarded as best capstone project on the bootcamp.</p>
               </div>
             </div>
             <div className="mt-3">

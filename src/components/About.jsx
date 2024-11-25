@@ -69,6 +69,13 @@ const About = ({ about, contact }) => {
                 className="skillsBtn px-4 py-1"
               />
               <Button
+                label="JQuery"
+                disabled
+                severity="secondary"
+                raised
+                className="skillsBtn px-4 py-1"
+              />
+              <Button
                 label="React"
                 disabled
                 severity="secondary"
@@ -77,6 +84,13 @@ const About = ({ about, contact }) => {
               />
               <Button
                 label="PHP"
+                disabled
+                severity="secondary"
+                raised
+                className="skillsBtn px-4 py-1"
+              />
+              <Button
+                label="Codeigniter3"
                 disabled
                 severity="secondary"
                 raised
