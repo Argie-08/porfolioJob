@@ -1,5 +1,6 @@
 footer {
-  height: 250px;
+  height: fit-content;
+  padding: 2rem;
   width: 100%;
   background: rgb(0, 0, 0);
   color: white;
@@ -16,16 +17,27 @@ footer .container {
 .footerRow {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 1rem;
 }
 .copyright {
   font-size: 0.7rem;
 }
 footer h4 {
-  font-size: clamp(0.8rem, 0.7143rem + 0.381vw, 1rem);
+  font-size: 2rem;
   font-weight: 600;
+  filter: drop-shadow(0 0 0.3rem rgba(255, 255, 255, 0.562));
 }
 footer p {
   font-size: clamp(0.8rem, 0.7143rem + 0.381vw, 1rem);
+}
+.footerRow a {
+  color: #ffffff90;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+.footerRow a:hover {
+  color: #9bec00;
+  text-decoration: none;
 }
 @media (max-width: 575px) {
   .footerRow {
@@ -37,10 +49,9 @@ footer p {
     padding-bottom: 1rem;
   }
 }
-@media (min-width: 768px) {
-}
-@media (min-width: 961px) {
-}
-
-@media (min-width: 1200px) {
+@media (max-width: 768px) {
+  .mobileFooterView {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
 }

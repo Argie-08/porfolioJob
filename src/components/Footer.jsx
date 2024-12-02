@@ -3,7 +3,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import "./Footer.css";
 
-const Footer = (statement) => {
+const Footer = () => {
   function linkedIn() {
     window.location.href =
       "https://www.linkedin.com/in/argie-canonayon-92305a216";
@@ -21,17 +21,31 @@ const Footer = (statement) => {
     <footer>
       <Container>
         <Row className="footerRow footerLine">
-          <Col md={8} className="">
-            <h4>ARGIE CANONAYON</h4>
-            <p>{statement.statement}</p>
-          </Col>
-          <Col md={3} className="">
-            <h4>SOCIAL MEDIA</h4>
-            <div className="d-flex gap-3">
-              <i className="pi pi-linkedin sideBarIcon" onClick={linkedIn}></i>
-              <i className="pi pi-github sideBarIcon" onClick={gitHub}></i>
-              <i className="pi pi-discord sideBarIcon" onClick={discord}></i>
-              <i className="pi pi-facebook sideBarIcon" onClick={facebook}></i>
+          <Col className="d-flex justify-content-between mobileFooterView">
+            <h4>EULADEV</h4>
+            <div>
+              <p>Quick Links</p>
+              <div className="d-flex gap-4">
+                <a href="home">Home</a>
+                <a href="about">About</a>
+                <a href="services">Services</a>
+                <a href="contact">Contact</a>
+              </div>
+            </div>
+            <div>
+              <h5>Social Media</h5>
+              <div className="d-flex gap-3">
+                <i
+                  className="pi pi-linkedin sideBarIcon"
+                  onClick={linkedIn}
+                ></i>
+                <i className="pi pi-github sideBarIcon" onClick={gitHub}></i>
+                <i className="pi pi-discord sideBarIcon" onClick={discord}></i>
+                <i
+                  className="pi pi-facebook sideBarIcon"
+                  onClick={facebook}
+                ></i>
+              </div>
             </div>
           </Col>
         </Row>

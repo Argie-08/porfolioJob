@@ -6,37 +6,40 @@ import Recipe from "../assets/recipe.png";
 import RiderShield from "../assets/ridershield.png";
 import "./Projects.css";
 
-const Projects = ({ project }) => {
+const Projects = () => {
   function pureJs() {
-    window.location.href = "https://eulakitchen.onrender.com";
+    window.open("https://eulakitchen.onrender.com", "_blank");
   }
   function fullStack() {
-    window.location.href = "https://ridershield-frontend.onrender.com";
+    window.open("https://ridershield-frontend.onrender.com", "_blank");
   }
   function pureJsGit() {
-    window.location.href =
-      "https://github.com/Argie-08/kodego-mini-project-2.git";
+    window.open(
+      "https://github.com/Argie-08/kodego-mini-project-2.git",
+      "_blank"
+    );
   }
   function frontGit() {
-    window.location.href = "https://github.com/Argie-08/ridershield.git";
+    window.open("https://github.com/Argie-08/ridershield.git", "_blank");
   }
   function backGit() {
-    window.location.href =
-      "https://github.com/Argie-08/ridershield_backend.git";
+    window.open(
+      "https://github.com/Argie-08/ridershield_backend.git",
+      "_blank"
+    );
   }
   return (
-    <section ref={project} className="pt-5">
+    <section id="projects" className="pt-5">
       <Container className="d-flex flex-column ">
         <Row className="mt-3">
           <Col className="d-flex flex-column align-items-center">
-            <h2 className="project">PROJECTS</h2>
+            <h2 className="project">Projects</h2>
             <p className="projectIntroTxt">
-              Here you will find some of the personal and bootcamp projects that
-              I created with each project containing its live link and codes.
+              Explore my latest works and projects that I have done.
             </p>
           </Col>
         </Row>
-        <Row className="d-flex gap-5 align-items-center projectSection">
+        <Row className="d-flex align-items-center projectSection">
           <Col xs={12} md={6} xl={6}>
             <img src={Recipe} className="recipeImg" />
           </Col>
@@ -44,13 +47,13 @@ const Projects = ({ project }) => {
             <div>
               <h4>Eula's Kitchen</h4>
               <p>
-                Take-Up is a successful and awarded as best project focused up
-                to ReactJs. Fetching APIs that populate the website for the
+                Awarded as best project on my bootcamp that focused up to
+                ReactJs. API integration that populate the website for the
                 individual that eager on recipe build.
               </p>
             </div>
             <div className="mt-3">
-              <h4>Tools Used</h4>
+              <h5>Tools Used</h5>
               <Button
                 label="HTML"
                 disabled
@@ -74,7 +77,7 @@ const Projects = ({ project }) => {
               />
             </div>
             <div className="mt-3">
-              <h4>See Live</h4>
+              <h5>See Live</h5>
               <div className="d-flex gap-4">
                 <Button
                   label="Live Link"
@@ -83,7 +86,7 @@ const Projects = ({ project }) => {
                 />
                 <Button
                   label="Github Code Link"
-                  className="py-2"
+                  className="py-2 linkBtn"
                   onClick={pureJsGit}
                   link
                 />
@@ -91,7 +94,7 @@ const Projects = ({ project }) => {
             </div>
           </Col>
         </Row>
-        <Row className="d-flex gap-5 align-items-center ">
+        <Row className="d-flex align-items-center projectSection">
           <Col md={6} xl={6}>
             <img src={RiderShield} className="recipeImg" />
           </Col>
@@ -107,7 +110,7 @@ const Projects = ({ project }) => {
               </div>
             </div>
             <div className="mt-3">
-              <h4>Tools Used</h4>
+              <h5>Tools Used</h5>
               <Button
                 label="HTML"
                 disabled
@@ -146,7 +149,7 @@ const Projects = ({ project }) => {
               <p>and all my skills declared above.</p>
             </div>
             <div className="mt-3">
-              <h4>See Live</h4>
+              <h5>See Live</h5>
               <div className="d-flex gap-4">
                 <Button
                   label="Live Link"
@@ -155,13 +158,13 @@ const Projects = ({ project }) => {
                 />
                 <Button
                   label="Github Front-End"
-                  className="py-2 gitcode"
+                  className="py-2 gitcode linkBtn"
                   onClick={frontGit}
                   link
                 />
                 <Button
                   label="Github Back-End"
-                  className="py-2 gitcode"
+                  className="py-2 gitcode linkBtn"
                   onClick={backGit}
                   link
                 />

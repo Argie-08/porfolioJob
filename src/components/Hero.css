@@ -1,9 +1,5 @@
 .heroMain {
   width: 100%;
-  background: url(https://static.vecteezy.com/system/resources/previews/007/100/608/non_2x/abstract-geometric-white-and-gray-on-light-silver-gradient-background-modern-banner-design-illustration-free-vector.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -27,37 +23,107 @@
 .heroH2 h2 {
   font-weight: 900;
   font-size: clamp(2.5rem, 1.8571rem + 2.8571vw, 4rem);
+  color: #9bec00;
+}
+.heroH2 span {
+  font-weight: 900;
+  font-size: clamp(2.5rem, 1.8571rem + 2.8571vw, 4rem);
+  color: #ffffff60;
 }
 .heroH2 {
   width: 50%;
 }
 .heroH2 p {
   font-size: clamp(1rem, 0.9143rem + 0.381vw, 1.2rem);
+  color: #ffffff;
 }
 .reachAccount {
   position: absolute;
-
   top: 40%;
   left: 5%;
   height: fit-content;
   width: fit-content;
-  border: solid 1px rgba(0, 0, 0, 0.3);
+  border: solid 1px #ffffff60;
   border-radius: 0.5rem;
 }
 .sideBarIcon {
   font-size: clamp(1.5rem, 1.2857rem + 0.9524vw, 2rem);
-  transition: 0.3s;
+  transition: 0.3s ease-in-out;
+  color: #ffffff60;
 }
 .sideBarIcon:hover {
-  color: #d34e00;
+  color: #81c700;
   cursor: pointer;
 }
+.hiringSection {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  align-items: center;
+}
+.hiringSection button {
+  background: #9bec00;
+  border: none;
+  padding: 1rem 3rem;
+  border-radius: 1rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.2rem;
+  transition: 0.3 ease-in-out;
+}
+.hiringSection button:hover {
+  background: #81c700;
+}
+.hiringSection p {
+  color: #ffffff;
+  font-weight: 700;
+  margin: 0;
+  border-bottom: solid 1px #ffffff60;
+  transition: 0.2s ease-in-out;
+}
+.hiringSection span {
+  font-size: 1rem;
+  color: #000000;
+}
+.hiringSection div span {
+  color: #ffffff;
+  font-size: 1rem;
+  transition: 0.2s ease-in-out;
+}
+
+.hiringSection div {
+  cursor: pointer;
+}
+.hiringSection div:hover span,
+.hiringSection div:hover p {
+  color: #81c700;
+}
+.hiringSection .pi-angle-right {
+  vertical-align: middle;
+}
+
 @media (max-width: 575px) {
   .heroMain {
     height: 100%;
   }
   .reachAccount {
     padding: 0.5rem;
+  }
+  .hiringSection button,
+  .hiringSection p {
+    white-space: nowrap;
+  }
+
+  .hiringSection button {
+    padding: 0.5rem 2rem;
+    font-size: 0.8rem;
+  }
+
+  .hiringSection p {
+    font-size: 0.8rem;
   }
 }
 @media (min-width: 576px) {

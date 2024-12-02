@@ -5,3 +5,15 @@
   font-size: 15px;
   font-family: firaRegular;
 }
+body {
+  background-color: #141414;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+}

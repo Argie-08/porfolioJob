@@ -1,59 +1,127 @@
-.contactForm {
-  height: 100%;
-  width: 100%;
-  background: url(https://static.vecteezy.com/system/resources/previews/007/100/608/non_2x/abstract-geometric-white-and-gray-on-light-silver-gradient-background-modern-banner-design-illustration-free-vector.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  padding-bottom: 2rem;
-}
-.contactForm p {
-  font-size: clamp(0.8rem, 0.6714rem + 0.5714vw, 1.1rem);
-  text-align: center;
-  margin-bottom: 2rem;
-}
-form {
-  background: rgb(255, 255, 255);
-  height: 100%;
-  padding: 1rem;
-  width: 800px;
-  border-radius: 0.5rem;
-  box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.5);
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-}
-
-.inputForm {
-  padding-left: 2rem;
-  width: 100%;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  font-size: clamp(0.8rem, 0.7143rem + 0.381vw, 1rem);
-}
-.inputForm:hover {
-  border-color: rgba(0, 0, 0, 0.5);
-}
-.inputIcon {
-  font-size: 1.2rem;
-}
 .formContainer {
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  background-color: #2c3333;
+  padding: 2rem !important;
+}
+.contactForm {
+  height: 100%;
+  width: 100%;
+  background: transparent;
+  padding-bottom: 2rem;
+  border: none;
+}
+
+.contactDetailContainer .pi-check {
+  background: #9bec00;
+  height: 40px;
+  width: 40px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contactDetailContainer h4 span {
+  color: #9bec00;
+  font-size: 2rem;
+  font-weight: 600;
+}
+.contactDataDetails {
+  border: solid 1px #141414;
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+  padding: 1rem;
+  gap: 1.5rem;
+}
+.contactDataDetails input {
+  background: transparent;
+  border: solid 1px #141414;
+  color: #ffffff90;
+}
+.contactDataDetails input:focus {
+  background: transparent;
+  border: solid 1px #141414;
+  box-shadow: 0px 0px 5px #9bec00;
+  color: #ffffff;
+}
+
+.contactDataDetails .form-floating {
+  position: relative;
+}
+.contactDataDetails .pi {
+  font-size: 1.2rem;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+.contactDataDetails textarea {
+  background: transparent;
+  border: solid 1px #141414;
+  color: #ffffff90;
+}
+.contactDataDetails textarea:focus {
+  background: transparent;
+  border: solid 1px #141414;
+  box-shadow: 0px 0px 5px #9bec00;
+  color: #ffffff;
+}
+.contactDataDetails button {
+  background: #9bec00;
+  width: 250px;
+  border: none;
+  padding: 0.7rem 3rem;
+  border-radius: 1rem;
+  font-weight: 700;
+  font-size: 1.2rem;
+  transition: 0.3 ease-in-out;
+  color: #141414;
+}
+.contactDataDetails button:hover {
+  background: #81c700;
+}
+.contactDataDetails button span {
+  font-size: 1.2rem;
+  vertical-align: middle;
+  color: #141414;
+}
+.p-toast-top-right {
+  background-color: #81c70034;
+}
+.p-progressbar-value {
+  background: #81c700;
 }
 @media (max-width: 575px) {
   .contactForm {
     height: 100%;
   }
+  .contactDataDetails button {
+    width: 100%;
+  }
 }
-@media (min-width: 576px) {
-}
-@media (min-width: 768px) {
-}
-@media (min-width: 961px) {
-}
-
-@media (min-width: 1200px) {
+@media (max-width: 768px) {
+  .contactDetailContainer {
+    margin-bottom: 2rem;
+  }
+  .contactDataDetails .row .col-md-6 {
+    margin-bottom: 1.5rem;
+  }
+  .contactDataDetails {
+    gap: 0rem;
+  }
+  .contactDataDetails textarea {
+    margin-bottom: 1.5rem;
+  }
+  .contactDetailContainer .pi-check {
+    height: 35px;
+    width: 35px;
+    font-size: 1.2rem;
+  }
+  .contactDetailContainer div {
+    gap: 0.5rem;
+  }
 }

@@ -1,171 +1,139 @@
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import { Button } from "primereact/button";
+import Profile from "../assets/ProfilePicture2.png";
 import "./About.css";
 
-const About = ({ about, contact }) => {
+const About = () => {
   return (
-    <main className="d-flex align-items-center pt-5 aboutSection" ref={about}>
+    <main className="d-flex align-items-center pt-5 aboutSection" id="about">
       <Container className="d-flex flex-column justify-content-around">
         <Row>
           <Col className="d-flex flex-column align-items-center textCenter aboutMarginBtm">
-            <h2 className="about">ABOUT ME</h2>
-            <p>
-              Here you will find more information about me, what I do, and my
-              current skills mostly in terms of web development.
-            </p>
+            <h2 className="about">About Me</h2>
           </Col>
         </Row>
-        <Row className="d-flex gap-5">
+        <Row className="">
           <Col xl={6}>
-            <h3 className="mb-4 knowMargin">Get to know me!</h3>
-            <p>
-              I'm a <b>Full Stack Web Developer</b> building and managing the
-              Front-end and Back-end of Websites and Web Applications that leads
-              to the success of the overall product. Check out some of my work
-              in the <b>Projects</b> section.
-            </p>
-            <p>
-              I got this technical skills on my bootcamp and being awarded as
-              top coder on <b>Web Development</b> that showcase my skills on IT
-              world. I keep on pushing myself on my continous learning where I
-              regularly update my capabilities related to Web Development and
-              Programming
-            </p>
-            <p>
-              I'm open to <b>Job</b> opportunities where I can contribute, learn
-              and grow. If you have a good opportunity that matches my skills
-              and experience then don't hesitate to <b>contact</b> me.
-            </p>
-            <Button
-              label="CONTACT"
-              className="py-3 contactBtn mt-3"
-              onClick={contact}
-            ></Button>
+            <h3 className="mb-4 knowMargin">
+              Motivated <span> Web Developer</span> and{" "}
+              <span>Problem Solver</span>
+            </h3>
+            <div className="mb-4">
+              <p>
+                I am a committed web developer with knowledge building
+                user-friendly and responsive websites. I can provide clients
+                with high-quality solutions because of my strong education in
+                both front-end and back-end programming and my exceptional
+                problem-solving abilities.
+              </p>
+              <p>
+                I'm open to job opportunities where I can contribute, learn and
+                grow. If you have a good opportunity that matches my skills and
+                experience then don't hesitate to contact me.
+              </p>
+            </div>
+            <div className="toolsContainer d-flex flex-column gap-4 mb-4">
+              <p>
+                My Toolkits:
+                <span>
+                  <i className="pi pi-desktop"></i>
+                </span>
+              </p>
+              <div>
+                <Row>
+                  <Col xs={12} className="mb-2">
+                    <div className="d-flex align-items-center gap-3 toolkitContent">
+                      <p>
+                        <span>
+                          <i className="pi pi-check"></i>
+                        </span>
+                        Front-End:
+                      </p>
+                      <p>HTML5, CSS3, Javascript, React</p>
+                    </div>
+                  </Col>
+                  <Col xs={12} className="mb-2">
+                    <div
+                      className="d-flex align-items-center gap-3 toolkitContent"
+                      style={{ width: "100%" }}
+                    >
+                      <p>
+                        <span>
+                          <i className="pi pi-check"></i>
+                        </span>
+                        Back-End:
+                      </p>
+                      <p>
+                        PHP, Laravel, Codeigniter, MySQL, PgSQL, API Integration
+                      </p>
+                    </div>
+                  </Col>
+                  <Col xs={12}>
+                    <div
+                      className="d-flex align-items-center gap-3 toolkitContent"
+                      style={{ width: "100%" }}
+                    >
+                      <p>
+                        <span>
+                          <i className="pi pi-check"></i>
+                        </span>
+                        UI Libraries:
+                      </p>
+                      <p>Bootstrap, React Bootstrap, PrimeReact, Ant Design</p>
+                    </div>
+                  </Col>
+                </Row>
+              </div>
+            </div>
+            <div className="mt-3 onDesktop">
+              <Row className="contactContainer">
+                <Col xs={12} className="mb-3">
+                  <div className="d-flex align-items-center gap-3">
+                    <i className="pi pi-envelope"> </i>
+                    <div>
+                      <p className="m-0">Email Me</p>
+                      <p className="m-0">argiecanonayon1991@gmail.com</p>
+                    </div>
+                  </div>
+                </Col>
+                <Col xs={12}>
+                  <div className="d-flex align-items-center gap-3">
+                    <i className="pi pi-phone"> </i>
+                    <div>
+                      <p className="m-0">Call Me</p>
+                      <p className="m-0">0997-267-7080</p>
+                    </div>
+                  </div>
+                </Col>
+              </Row>
+            </div>
           </Col>
-          <Col xl={5}>
-            <h3 className="mb-4">My Skills</h3>
-            <div className="buttonAlign">
-              <Button
-                label="HTML"
-                disabled
-                severity="secondary"
-                raised
-                className="skillsBtn px-4 py-1"
-              />
-              <Button
-                label="CSS"
-                disabled
-                severity="secondary"
-                raised
-                className="skillsBtn px-4 py-1"
-              />
-              <Button
-                label="Javascript"
-                disabled
-                severity="secondary"
-                raised
-                className="skillsBtn px-4 py-1"
-              />
-              <Button
-                label="JQuery"
-                disabled
-                severity="secondary"
-                raised
-                className="skillsBtn px-4 py-1"
-              />
-              <Button
-                label="React"
-                disabled
-                severity="secondary"
-                raised
-                className="skillsBtn px-4 py-1"
-              />
-              <Button
-                label="PHP"
-                disabled
-                severity="secondary"
-                raised
-                className="skillsBtn px-4 py-1"
-              />
-              <Button
-                label="Codeigniter3"
-                disabled
-                severity="secondary"
-                raised
-                className="skillsBtn px-4 py-1"
-              />
-              <Button
-                label="Github"
-                disabled
-                severity="secondary"
-                raised
-                className="skillsBtn px-4 py-1"
-              />
-              <Button
-                label="Responsive Design"
-                disabled
-                severity="secondary"
-                raised
-                className="skillsBtn px-4 py-1"
-              />
-              <Button
-                label="Laravel"
-                disabled
-                severity="secondary"
-                raised
-                className="skillsBtn px-4 py-1"
-              />
-              <Button
-                label="MySQL"
-                disabled
-                severity="secondary"
-                raised
-                className="skillsBtn px-4 py-1"
-              />
-              <Button
-                label="React Bootstrap"
-                disabled
-                severity="secondary"
-                raised
-                className="skillsBtn px-4 py-1"
-              />
-              <Button
-                label="PrimeReact"
-                disabled
-                severity="secondary"
-                raised
-                className="skillsBtn px-4 py-1"
-              />
-              <Button
-                label="Ant Design"
-                disabled
-                severity="secondary"
-                raised
-                className="skillsBtn px-4 py-1"
-              />
-              <Button
-                label="Postman"
-                disabled
-                severity="secondary"
-                raised
-                className="skillsBtn px-4 py-1"
-              />
-              <Button
-                label="Photoshop"
-                disabled
-                severity="secondary"
-                raised
-                className="skillsBtn px-4 py-1"
-              />
-              <Button
-                label="Figma"
-                disabled
-                severity="secondary"
-                raised
-                className="skillsBtn px-4 py-1"
-              />
+          <Col xl={6} className="profileContainer">
+            <img src={Profile} alt="" />
+          </Col>
+          <Col xs={12}>
+            <div className="onMobile">
+              <Row className="contactContainer">
+                <Col xs={12} className="mb-3">
+                  <div className="d-flex align-items-center gap-3">
+                    <i className="pi pi-envelope"> </i>
+                    <div>
+                      <p className="m-0">Email Me</p>
+                      <p className="m-0">argiecanonayon1991@gmail.com</p>
+                    </div>
+                  </div>
+                </Col>
+                <Col xs={12}>
+                  <div className="d-flex align-items-center gap-3">
+                    <i className="pi pi-phone"> </i>
+                    <div>
+                      <p className="m-0">Call Me</p>
+                      <p className="m-0">0997-267-7080</p>
+                    </div>
+                  </div>
+                </Col>
+              </Row>
             </div>
           </Col>
         </Row>
